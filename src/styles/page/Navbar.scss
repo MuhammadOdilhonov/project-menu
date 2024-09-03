@@ -1,0 +1,71 @@
+// Variables
+$primary-color: #6F492B;
+$white-color: #ffffff;
+$black-color: #000000;
+$gray-border: #D1D5DB;
+$border-radius: 0.5rem;
+$shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+// Navbar container
+.navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: $white-color;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+
+    // Responsive design for mobile screens
+    @media (max-width: 600px) {
+        flex-direction: column; // Stack items vertically
+        gap: 0.5rem;
+    }
+}
+
+// Navbar icon (table image)
+.navbar-icon {
+    border-radius: 50%;
+    border: 1px solid $gray-border;
+}
+
+// Table number
+.table-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $black-color;
+}
+
+// Menu button
+.menu-button {
+    background-color: $primary-color;
+    color: $white-color;
+    border-radius: $border-radius;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    // Responsive design for mobile screens
+    @media (max-width: 600px) {
+        width: 100%; // Make buttons full width
+        justify-content: center; // Center content
+        
+    }
+}
+
+// Menu button image
+.menu-button-img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+// Menu button label
+.menu-button-label {
+    font-weight: 500;
+}
